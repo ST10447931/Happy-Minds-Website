@@ -1,0 +1,354 @@
+/* style.css - Happy Minds Main Stylesheet */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
+  background-color: #fefcf8;
+  color: #1e2a2f;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, .logo-text, .serif {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #d94a2b;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: #b83a1f;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid #d94a2b;
+  color: #d94a2b;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.btn-outline:hover {
+  background: #d94a2b10;
+}
+
+.btn-secondary {
+  background: #1e2a2f;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: #2e423f;
+}
+
+/* Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #fefcf8;
+  border-bottom: 1px solid #e6e0d4;
+  z-index: 100;
+  backdrop-filter: blur(2px);
+  background-color: rgba(254, 252, 248, 0.96);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  background: #d94a2b;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon svg {
+  width: 22px;
+  height: 22px;
+  color: white;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e2a2f;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #2c423f;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: #d94a2b;
+}
+
+.donate-btn {
+  background: #1e2a2f;
+  color: #fefcf8 !important;
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+}
+
+.donate-btn:hover {
+  background: #d94a2b;
+  color: white !important;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: #fefcf8;
+  padding: 20px;
+  border-top: 1px solid #e6e0d4;
+}
+
+.mobile-nav a {
+  padding: 12px 0;
+  font-weight: 500;
+  border-bottom: 1px solid #f0e8df;
+}
+
+.mobile-nav.show {
+  display: flex;
+}
+
+/* Page Hero */
+.page-hero {
+  background: linear-gradient(135deg, #f9f3ec 0%, #fefcf8 100%);
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 1px solid #ece3d8;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  color: #4a5b56;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 48px;
+}
+
+/* Cards */
+.value-card, .program-card, .impact-card, .resource-card {
+  background: white;
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid #ece3d8;
+  transition: all 0.2s;
+}
+
+.value-card:hover, .program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+/* Grids */
+.values-grid, .programs-grid, .impact-grid, .team-grid, .resources-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.values-grid > *, .programs-grid > *, .impact-grid > *, .team-grid > *, .resources-grid > * {
+  flex: 1;
+  min-width: 240px;
+}
+
+/* Stats */
+.stats-bar {
+  background: #f4efe8;
+  padding: 48px 0;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 2.2rem;
+  color: #d94a2b;
+  font-weight: 700;
+}
+
+.stat-item p {
+  color: #4a5b56;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ddd4c5;
+  border-radius: 12px;
+  background: #fefcf8;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: #d94a2b;
+}
+
+/* Footer */
+footer {
+  background: #1e2a2f;
+  color: #cabfae;
+  padding: 48px 0 32px;
+  margin-top: 60px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-col h4 {
+  color: #ede3d4;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+}
+
+.footer-col a {
+  display: block;
+  color: #cabfae;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.footer-col a:hover {
+  color: #d94a2b;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 28px;
+  border-top: 1px solid #2e3f3b;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* Utility */
+.text-center { text-align: center; }
+.mt-4 { margin-top: 24px; }
+.mb-4 { margin-bottom: 24px; }
