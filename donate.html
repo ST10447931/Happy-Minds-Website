@@ -30,17 +30,44 @@
         <div style="background: #f9f6f0; border-radius: 20px; padding: 32px; text-align: center; min-width: 150px;"><h3 style="font-size: 2rem; color: #d94a2b;">R500</h3><p style="color: #4a5b56;">Sponsors a child<br>for full semester</p></div>
       </div>
 
-      <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 32px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-        <form id="donateForm">
-          <div class="form-group"><label>Donation amount (R)</label><input type="number" placeholder="Enter amount" value="50" required></div>
-          <div class="form-group"><label>Frequency</label><select><option>One-time</option><option>Monthly</option></select></div>
-          <div class="form-group"><label>Full name</label><input type="text" required></div>
-          <div class="form-group"><label>Email</label><input type="email" required></div>
-          <div class="form-group"><label>Payment details</label><input type="text" placeholder="Card number"></div>
-          <button type="submit" class="btn-primary" style="width: 100%;">Complete donation</button>
-          <p id="donateFeedback" style="margin-top: 16px; font-size: 0.85rem; text-align: center;"></p>
-        </form>
-      </div>
+     <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 32px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+  <form id="donateForm">
+    <div class="form-group">
+      <label>Donation amount (R)</label>
+      <input type="number" placeholder="Enter amount" value="50" required>
+    </div>
+    <div class="form-group">
+      <label>Frequency</label>
+      <select>
+        <option>One-time</option>
+        <option>Monthly</option>
+      </select>
+      
+    </div>
+    <div class="form-group">
+      <label>Full name</label>
+      <input type="text" name="full_name" required placeholder="e.g., John Doe">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" required placeholder="e.g., john@example.com">
+    </div>
+    <div class="form-group">
+      <label>Payment details</label>
+      <input type="text" placeholder="Card number (demo only)">
+      <input type="text" placeholder="CVC (demo only)" style="margin-top: 8px;">
+      <small style="color: #6c757d; display: block; margin-top: 4px;">This is a demo - no actual payment will be processed</small>
+    </div>
+    <div class="form-group">
+      <label>Bank transfer details</label>
+      <input type="text" value="Bank: First National Bank (FNB)" readonly style="background: #f8f9fa; color: #6c757d; cursor: default;">
+      <input type="text" value="Account number: 62847301956" readonly style="background: #f8f9fa; color: #6c757d; margin-top: 8px; cursor: default;">
+      <input type="text" name="reference" placeholder="Reference: Your Full Name" style="margin-top: 8px;">
+    </div>
+    <button type="submit" class="btn-primary" style="width: 100%;">Complete donation</button>
+    <p id="donateFeedback" style="margin-top: 16px; font-size: 0.85rem; text-align: center;"></p>
+  </form>
+</div>
     </div>
   </section>
 
